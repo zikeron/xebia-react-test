@@ -70,7 +70,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        TOKEN: JSON.stringify('709dfb8754384c936db09fcc5797959ccf3b81f0'),
+        TOKEN: JSON.stringify(''),
       },
     }),
   ],
