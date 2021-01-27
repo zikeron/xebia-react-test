@@ -8,7 +8,9 @@ This is React⚛️ web application that displays all the "topics" related to th
 ## Demo
 To check the result instead of run this project on your computer, feel free to visit this page [Demo](https://xebia-react-test.netlify.app/), but if you wanna confirm that this is the same project shown, please follow the instructions below.  
  
-## Get Started
+## Get Started  
+
+Important, to run this project you must have a GitHub GraphQL API token to be able to do requests. If you already have a token, you should replace its value in a .env file, you can find a .env.demo in this repository to check variables name.  
 
 To download dependencies
 
