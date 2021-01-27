@@ -2,7 +2,7 @@ import { ApolloClient, HttpLink, InMemoryCache, split } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
 const BASE_URI = 'https://api.github.com/graphql';
-const { TOKEN } = process.env;
+const { GITHUB_TOKEN } = process.env;
 
 const httpLink = new HttpLink({
   uri: BASE_URI,
@@ -12,7 +12,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: TOKEN ? `Bearer ${TOKEN}` : '',
+      authorization: GITHUB_TOKEN ? `Bearer ${GITHUB_TOKEN}` : '',
     },
   };
 });
