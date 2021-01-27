@@ -1,0 +1,72 @@
+{
+  "name": "xebia-react-react",
+  "version": "1.0.0",
+  "description": "React & Graphql App",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production --config webpack.prod.config.js",
+    "start": "webpack serve --open --mode development --config webpack.config.js",
+    "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
+    "lint": "eslint src/ --fix",
+    "staging": "webpack --mode production && npx serve dist -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zikeron/xebia-react-test.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "React",
+    "ReactJS"
+  ],
+  "author": "Alejandro Cortez",
+  "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/zikeron/xebia-react-test.git/issues"
+  },
+  "homepage": "https://github.com/zikeron/xebia-react-test.git#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-async-to-generator": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.4",
+    "prettier": "^2.2.1",
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.7",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.5.0",
+    "react": "^17.0.1",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^17.0.1",
+    "terser-webpack-plugin": "latest"
+  }
+}

@@ -1,0 +1,33 @@
+.Item {
+  display: flex;
+    justify-content: space-between;
+  border: none;
+  border-radius: 30px;
+  color: #808080;
+  margin: 12px 0 12px 0;
+  height: 28px;
+  padding: 4px;
+  width: 100%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.Item p {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.Item:hover {
+  background-color: #23689b;
+  box-shadow: 0px 15px 20px rgba(24, 112, 229, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.Item p:hover {
+    cursor: pointer;
+}

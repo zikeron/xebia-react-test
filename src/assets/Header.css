@@ -1,0 +1,19 @@
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #23689b;
+  color: #fefefe;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__title p {
+  font-weight: 500;
+  margin: 14px 0 0;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
