@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   devtool: 'hidden-source-map',
@@ -103,6 +102,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
     }),
-    new Dotenv(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        GITHUB_TOKEN: JSON.stringify(process.env.GITHUB_TOKEN),
+      },
+    }),
   ],
 };
